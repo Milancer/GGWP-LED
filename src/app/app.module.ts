@@ -1,11 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { BodyContainerComponent } from './body-container/body-container.component';
-import { ColorPickerContainerComponent } from './color-picker-container/color-picker-container.component';
-import { DeskContainerComponent } from './desk-container/desk-container.component';
 import { RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -13,14 +8,22 @@ import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 import { ColorPickerModule } from 'ngx-color-picker';
+import { SideBarComponent } from './side-bar/side-bar.component';
+import { BodyContainerComponent } from './body-container/body-container.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { ColorPickerComponent } from './color-picker/color-picker.component';
+import { RegistrationComponent } from './registration/registration.component';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
+    SideBarComponent,
     BodyContainerComponent,
-    ColorPickerContainerComponent,
-    DeskContainerComponent,
+    ColorPickerComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,17 +32,8 @@ import { ColorPickerModule } from 'ngx-color-picker';
     MatInputModule,
     BrowserAnimationsModule,
     MatTableModule,
+    MatTabsModule,
     ColorPickerModule,
-    RouterModule.forRoot([
-      { 
-        path: '', 
-        component: ColorPickerContainerComponent 
-      },
-      { 
-        path: 'deskregistration', 
-        component: DeskContainerComponent 
-      },
-    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

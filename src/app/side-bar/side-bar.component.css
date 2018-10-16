@@ -1,0 +1,22 @@
+.side-bar{
+    width: 20%;
+    height: 100%;
+    background-color: grey;
+    float: left;
+    box-shadow: 4px 0px 8px 0 rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+:host /deep/ .mat-tab-label{
+    min-width: 50%;
+}
+
+.logo{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    background-color: grey;
+    bottom: 0px;
+    border-top: 1px solid white;
+}

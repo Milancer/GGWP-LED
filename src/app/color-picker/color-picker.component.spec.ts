@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DeskContainerComponent } from './desk-container.component';
+import { ColorPickerComponent } from './color-picker.component';
 
-describe('DeskContainerComponent', () => {
-  let component: DeskContainerComponent;
-  let fixture: ComponentFixture<DeskContainerComponent>;
+describe('ColorPickerComponent', () => {
+  let component: ColorPickerComponent;
+  let fixture: ComponentFixture<ColorPickerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DeskContainerComponent ]
+      declarations: [ ColorPickerComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DeskContainerComponent);
+    fixture = TestBed.createComponent(ColorPickerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
