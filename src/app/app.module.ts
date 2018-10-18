@@ -13,7 +13,11 @@ import { BodyContainerComponent } from './body-container/body-container.componen
 import { MatTabsModule } from '@angular/material/tabs';
 import { ColorPickerComponent } from './color-picker/color-picker.component';
 import { RegistrationComponent } from './registration/registration.component';
-
+import { CardContainerComponent } from './card-container/card-container.component';
+import { MatCardModule } from '@angular/material/card';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatListModule } from '@angular/material/list';
 
 
 
@@ -24,6 +28,7 @@ import { RegistrationComponent } from './registration/registration.component';
     BodyContainerComponent,
     ColorPickerComponent,
     RegistrationComponent,
+    CardContainerComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +39,9 @@ import { RegistrationComponent } from './registration/registration.component';
     MatTableModule,
     MatTabsModule,
     ColorPickerModule,
+    MatCardModule,
+    MatDialogModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

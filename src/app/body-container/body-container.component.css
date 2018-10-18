@@ -1,7 +1,8 @@
 .main-container{
     width: 80%;
     height: 100%;
-    background-image: linear-gradient(to right, #ffffff, #e8e8e8, #d1d1d1, #bababa, #a4a4a4);
+    background-image: linear-gradient(to left, #ffffff, #e8e8e8, #d1d1d1, #bababa, #a4a4a4);
     float: right;
     position: relative;
+    overflow: scroll;
 }
