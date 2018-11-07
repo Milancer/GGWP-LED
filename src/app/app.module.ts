@@ -1,34 +1,31 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
-import { MatButtonModule } from '@angular/material/button';
+import { MatButtonModule, MatSliderModule, MatFormFieldModule } from '@angular/material';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatInputModule } from '@angular/material/input';
+import { GestureConfig } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatTableModule } from '@angular/material/table';
 import { ColorPickerModule } from 'ngx-color-picker';
-import { SideBarComponent } from './side-bar/side-bar.component';
 import { BodyContainerComponent } from './body-container/body-container.component';
-import { MatTabsModule } from '@angular/material/tabs';
-import { ColorPickerComponent } from './color-picker/color-picker.component';
-import { RegistrationComponent } from './registration/registration.component';
 import { CardContainerComponent } from './card-container/card-container.component';
-import { MatCardModule } from '@angular/material/card';
-import { InfiniteScrollModule } from 'ngx-infinite-scroll';
-import { MatDialogModule } from '@angular/material/dialog';
-import { MatListModule } from '@angular/material/list';
-
+import { MatCardModule, MatDialogModule, MatInputModule, MatListModule, MatTabsModule,MatTableModule} from '@angular/material/';
+import { DataTableComponent } from './data-table/data-table.component';
+import { DialogComponent } from './dialog/dialog.component';
+import { SideBarComponent } from './side-bar/side-bar.component';
+import { ColourPickerComponent } from './colour-picker/colour-picker.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SideBarComponent,
     BodyContainerComponent,
-    ColorPickerComponent,
-    RegistrationComponent,
     CardContainerComponent,
+    DataTableComponent,
+    DialogComponent,
+    SideBarComponent,
+    ColourPickerComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,8 +39,14 @@ import { MatListModule } from '@angular/material/list';
     MatCardModule,
     MatDialogModule,
     MatListModule,
+    FormsModule,
+    MatSliderModule,
+    MatFormFieldModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  entryComponents: [
+    DialogComponent
+  ],
+  providers: [{ provide: HAMMER_GESTURE_CONFIG, useClass: GestureConfig }],
+  bootstrap: [AppComponent,]
 })
 export class AppModule { }

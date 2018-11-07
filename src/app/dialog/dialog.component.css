@@ -1,0 +1,33 @@
+.outer{
+    width: 200px;
+    height: 200px;
+}
+
+.mat-dialog-actions{
+    padding: 36px 0px;
+}
+
+.mat-stroked-button{
+    margin: 0px 6px;
+    display: inline;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.mat-dialog-content{
+    padding: 0px 30px;
+}
+
+.mat-dialog-title{
+    padding-left: 5px;
+}
+
+input{
+    outline: none;
+}

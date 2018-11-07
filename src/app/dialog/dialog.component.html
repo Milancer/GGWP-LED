@@ -1,0 +1,13 @@
+<div class="outer">
+  <h6 mat-dialog-title>Create Group</h6>
+  <mat-dialog-content>
+      <h6>Name</h6>
+      <input type ="text" [(ngModel)]='groupName'>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <div class="button-container">
+      <button class="left" mat-stroked-button (click)="addGroup(groupName)">Add</button>
+      <button class="right" mat-stroked-button (click)="close()">Cancel</button>
+    </div>
+  </mat-dialog-actions>
+</div>

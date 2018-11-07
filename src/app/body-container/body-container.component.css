@@ -1,8 +1,16 @@
 .main-container{
     width: 80%;
     height: 100%;
-    background-image: linear-gradient(to left, #ffffff, #e8e8e8, #d1d1d1, #bababa, #a4a4a4);
+    background-image: linear-gradient(to right, #ffff05, #d5d72b, #aeaf36, #88893b, #65653b);
     float: right;
-    position: relative;
     overflow: scroll;
+    z-index: 0;
+    position: relative;
 }
+
+.add-group-btn{
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+  }
+
